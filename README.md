@@ -35,7 +35,7 @@ Aplicacion web básica de compra y alquiler de peliculas desarrollada con HTML, 
 
 # Implementacion
 
-###Estructura
+### Estructura
 
 - Crear base de datos con el nombre **"infinitycinema_bd"** importar el achivo .sql que se encuentra en: 
 **aplicacion-web-peliculas/database/infinitycinema_bd.sql**
@@ -140,7 +140,7 @@ estrutura:
 					
 				<?php BaseLayout::renderFooter(); ?>
 
-###Rutas
+### Rutas
                     
 Controlador  | Funcion | Ejemplo
 ------------- | ------------- | -------------
@@ -149,11 +149,6 @@ AdminController  | dashboard | <?=BASE_DIR?>Admin/dashboard/
 PeliculasController  | getAllMovies | <?=BASE_DIR?>Peliculas/getAllMovies/ 
 UsuarioController  | iniciarSesion | <?=BASE_DIR?/Usuario/iniciarSesion/ 
 
-**Tabla de contenido**
-
-[TOCM]
-
-[TOC]
 
 Se puede mejorar mucho más :)
 
