@@ -1,4 +1,4 @@
-#Infinitycinema
+# Infinitycinema
 
 Aplicacion web básica de compra y alquiler de peliculas desarrollada con HTML, CSS, PHP, MySql con arquitetura MVC, arquitectura BEM (css)
 
