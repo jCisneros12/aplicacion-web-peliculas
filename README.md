@@ -103,8 +103,9 @@ Aplicacion web básica de compra y alquiler de peliculas desarrollada con HTML, 
 
 modulo:
 
-1. - crear ***modelo*** en su respectiva ruta con el nombre:** NombreModel.php**
+1. - crear ***modelo*** en su respectiva ruta con el nombre:**NombreModel.php**
 estrutura:
+			
 			<?php
 				require_once  'database/DatabaseMysql.php';
 			
@@ -116,11 +117,12 @@ estrutura:
 					#funciones..
 				}
 
-2. - crear ***controlador*** en su respectiva ruta con el nombre:** NombreController.php**
+2. - crear ***controlador*** en su respectiva ruta con el nombre:**NombreController.php**
 estrutura:
+			
 			<?php
 				require_once  'database/DatabaseMysql.php';
-			
+				
 				class NuevoController{
 					public function nombreFuncion(){
 						#codigo...
@@ -129,16 +131,18 @@ estrutura:
 					#funciones..
 				}
 
-3. - crear ***vista*** en su respectiva ruta con el nombre:** NombreView.php**
+3. - crear ***vista*** en su respectiva ruta con el nombre:**NombreView.php**
 estrutura:
-			<?php
-				<?php require_once 'render/BaseLayout.php'; ?>
-				<?php BaseLayout::renderHead(); ?>
-				<?php BaseLayout::renderHeader(); ?>
+		
+		<?php
+			php require_once 'render/BaseLayout.php';
+			php BaseLayout::renderHead(); 
+			php BaseLayout::renderHeader(); ?>
 			
-						#Codigo html...
+					#Codigo html...
 					
-				<?php BaseLayout::renderFooter(); ?>
+			<?php BaseLayout::renderFooter(); 
+		?>
 
 ### Rutas
                     
