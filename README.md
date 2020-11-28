@@ -41,7 +41,7 @@ Aplicacion web básica de compra y alquiler de peliculas desarrollada con HTML, 
 **aplicacion-web-peliculas/database/infinitycinema_bd.sql**
 
 - configuracion de la base de datos :
-**aplicacion-web-peliculas/config/configDB.php **
+**aplicacion-web-peliculas/config/configDB.php**
 
 		<?php
 			  define ('DB_HOST', 'localhost');
@@ -53,7 +53,7 @@ Aplicacion web básica de compra y alquiler de peliculas desarrollada con HTML, 
 		
 
 - configuracion base de las rutas :
-**aplicacion-web-peliculas/config/configControllers.php **
+**aplicacion-web-peliculas/config/configControllers.php**
 
 		<?php
 			define ('BASE_DIR', "http://localhost/infinitycinema/");
