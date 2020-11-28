@@ -134,15 +134,16 @@ estrutura:
 3. - crear ***vista*** en su respectiva ruta con el nombre:**NombreView.php**
 estrutura:
 		
-		<?php
-			php require_once 'render/BaseLayout.php';
-			php BaseLayout::renderHead(); 
-			php BaseLayout::renderHeader(); ?>
-			
-					#Codigo html...
-					
-			<?php BaseLayout::renderFooter(); 
-		?>
+		
+			<?php
+				php require_once 'render/BaseLayout.php';
+				php BaseLayout::renderHead(); 
+				php BaseLayout::renderHeader(); ?>
+
+						#Codigo html...
+
+				<?php BaseLayout::renderFooter(); 
+			?>
 
 ### Rutas
                     
