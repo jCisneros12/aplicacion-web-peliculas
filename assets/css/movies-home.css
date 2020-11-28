@@ -1,0 +1,281 @@
+.movies {
+    /* height: 100px; */
+    width: 100vw;
+}
+
+.movies__filtro {
+    display: flex;
+    flex-direction: row-reverse;
+    /* width: 100vw; */
+    margin: 2em 6em 1em 1em;
+    position: relative;
+}
+
+.movies__filtro-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.movies__filtro::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: var(--color-red-accent);
+}
+
+.movies__text {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    margin: 0 .3em .5em .5em;
+}
+.select-container{
+    position: relative;
+}
+
+.select {
+    padding: .5em;
+    width: 200px;
+    font-size: var(--font-size-medium);
+    margin: 0 .5em;
+    background-color: var(--color-black-secondary);
+    color: var(--color-white-text);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    
+    display: inline-block;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+.select::-ms-expand {
+    display: none;
+}
+.arrow-down{
+    position: absolute;
+	right: 20px;
+	top: calc(50% - 10px);
+	width: 12px;
+	height: 12px;
+	display: block;
+	border-left:4px solid var(--color-red-accent);
+	border-bottom:4px solid var(--color-red-accent);
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+    transition: all 0.25s ease;
+    
+}
+.arrow-down:hover{
+    margin-top: 3px;
+}
+
+.select__option {
+    background-color: var(--color-black-container);
+    border: none;
+    
+}
+
+.button {
+    padding: .5em 2em;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-red-accent);
+    color: var(--color-white-text);
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 15px var(--color-red-accent);
+}
+
+.button__container {
+    margin-top: 1.5em;
+}
+
+.movies__search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 6em;
+    padding: 1em;
+    background-color: var(--color-black-container);
+    border-radius: 5px;
+}
+
+.movies__input-text {
+    padding: .5em;
+    border-radius: 10px;
+    border: none;
+    font-size: var(--font-size-medium);
+    background-color: var(--color-black-secondary);
+    color: var(--color-white-text);
+}
+
+/* listado de peliculas */
+
+.movies-list {
+    /* styles... */
+    margin: 2em 6em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    width: 201px;
+}
+
+.card__image-container {
+    overflow: hidden;
+}
+
+.card__img {
+    width: 200px;
+    height: 290px;
+    border-radius: 25px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card__img:hover {
+    transform: scale(1.15);
+    border-radius: 0px;
+}
+
+/* .card__image-container:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+} */
+
+.card__title {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    color: var(--color-white-text);
+}
+
+.card__details {
+    position: relative;
+    width: 200px;
+    display: inline-flex;
+    font-size: var(--font-size-small);
+    margin-bottom: 10px;
+}
+
+.card__buttons{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.separator {
+    width: 2px;
+    background-color: var(--color-red-accent);
+    box-shadow: 0 0 5px var(--color-red-accent);
+    margin: 0 5px;
+}
+
+.details__like-container {
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+    float: left;
+}
+
+.details__heart {
+    width: 15px;
+}
+
+.details__likes {
+    font-weight: bold;
+}
+
+.button--small {
+    padding: .3em .5em;
+    margin: 0;
+    font-size: var(--font-size-medium-16);
+}
+
+.button--outline {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid var(--color-red-accent);
+    color: var(--color-red-accent);
+}
+
+.button--outline:hover {
+    background-color: var(--color-red-accent);
+    border: 2px solid var(--color-red-accent);
+    color: var(--color-white-text);
+}
+.button-none{
+    background: none;
+    border: none;
+}
+/* paginacion ------------------------------*/
+
+.pagination{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 1em .5em;
+}
+.pagination__content{
+    
+}
+
+.pagination__pagina{
+    border: 2px solid var(--color-white-text-85);
+    margin: .5em;
+    padding: .5em .8em;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.pagination__pagina:hover{
+    border: 2px solid var(--color-red-accent);
+    background-color: var(--color-red-accent);
+    cursor: pointer;
+}
+
+.pagination__pagina--selected{
+    border: 2px solid var(--color-red-accent);
+    background-color: var(--color-red-accent);
+}
+
+.paginacion__a{
+    text-decoration: none;
+    color: var(--color-white-text);
+}
+.disable{
+    display: none;
+}
+
+.pagination__next{
+    border: 2px solid var(--color-white-text-85);
+    background-color: var(--color-white-text-85);
+    color: var(--color-black-secondary);
+    margin: .5em;
+    padding: .5em .8em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}

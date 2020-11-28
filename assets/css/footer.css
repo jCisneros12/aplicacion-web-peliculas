@@ -1,0 +1,53 @@
+@import url('root.css');
+.footer{
+    width: 100vw;
+    background-color: var(--color-black-secondary);
+    padding: 5em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.footer__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.footer__logo-img{
+    width: 20px;
+}
+
+/* ------ */
+
+.footer__page-info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    margin: 0 4em;
+    text-align: center;
+}
+
+/* .footer__navegation{
+    margin-bottom: 2em;
+    display: inline-flex;
+} */
+
+.footer__follow{
+    width: 30%;
+}
+
+.footer__info-text{
+    font-size: var(--font-size-small);
+    color: var(--color-white-text-85);
+}
+.footer__copyright{
+    font-size: var(--font-size-medium-16);
+    color: var(--color-white-text-85);
+    text-align: center;
+}

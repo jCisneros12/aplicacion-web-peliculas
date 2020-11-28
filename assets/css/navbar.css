@@ -1,0 +1,99 @@
+@import url("root.css");
+
+.navbar{
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    /* justify-content: center; */
+    /* color */
+    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.349); */
+     background-color: rgba(34, 34, 34, 1); 
+    /* background: linear-gradient(rgb(34, 34, 34), rgba(0, 0, 0, 0)); */
+    background: linear-gradient(var(--color-black-primary), rgba(0, 0, 0, 0));
+    color: white;
+    transition: all .3s;
+    z-index: 100;
+}
+
+.navbar:hover {
+    background-color: rgba(34, 34, 34);
+}
+
+.navbar_list {
+    position: relative;
+    float: center;
+}
+
+.navbar__link {
+    font-weight: bolder;
+    display: inline-flex;
+    margin: 0 1rem;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    /* color */
+    color: whitesmoke;
+    font-family: var(--font-family-title);
+    
+}
+
+.navbar__text{
+    text-shadow: 1px 1px 10px var(--color-red-accent);
+    /* text-shadow: 2px 0 0 var(--color-red-accent), 
+    -0.5px 0 0 var(--color-red-accent), 0 .5px 0 var(--color-red-accent), 
+    0 -.5px 0 var(--color-red-accent), .5px .5px var(--color-red-accent), 
+    -.5px -.5px 0 var(--color-red-accent), .5px -.5px 0 var(--color-red-accent), 
+    -.5px 1px 0 var(--color-red-accent); */
+}
+
+.navbar__link:hover{
+    /* color: var(--color-red-accent); */
+    text-shadow: 1px 1px 15px var(--color-red-accent-50);
+}
+
+.navbar__link--action{
+    padding: .4em .6em;
+    border-radius: 30px;
+    background-color: var(--color-red-accent);
+    box-shadow: 1px 1px 25px var(--color-red-accent-50);
+}
+
+.navbar__link--icon{
+    margin-right: .2em;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar__a{
+    text-decoration: none;
+}
+
+.navbar__logo{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.navbar__logo-img{
+    width: 40px;
+    float: left;
+    cursor: pointer;
+}
+
+.navbar__links {
+    margin-top: 1em;
+    position: absolute;
+    right: 5rem;
+}
+
+.text-small{
+    font-size: var(--font-size-small);
+}
+
+/* admin */
+
+.navbar-admin{
+    background-color: var(--color-black-primary);
+}

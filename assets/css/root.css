@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2? family = Acme & display = swap');
+:root {
+    /* colores */
+    --color-black-primary: #000000;
+    --color-black-primary-80: rgba(0, 0, 0, 0.80);
+    --color-black-primary-50: rgba(0, 0, 0, 0.50);
+    --color-black-secondary: #1F1F1F;
+    --color-black-container: #282828;
+    --color-red-accent: #D12626;
+    --color-white-text: rgb(252, 252, 252);
+    --color-white-text-85: rgb(255, 255, 255, .85);
+    --color-grey-bg: rgba(240, 240, 240, 0.85);
+    --color-red-accent-50: rgb(207, 38, 38, .5);
+    --color-green-text: #019e0e;
+    /* tamaño de fuente */
+    --font-size-big: 35px;
+    --font-size-big-30: 30px;
+    --font-size-big-25: 25px;
+    --font-size-big-20: 20px;
+    --font-size-medium: 18px;
+    --font-size-medium-16: 16px;
+    --font-size-small: 13px;
+    /* fuente de logo */
+    --font-family-acme: 'Acme', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+    background-color: var(--color-black-primary);
+    color: var(--color-white-text);
+    overflow-x: hidden;
+    color: var(--color-white-text);
+}
+
+main {
+    /* margin-top: 0; */
+    /* 6rem */
+}
+
+.margin {
+    margin-top: 8em;
+}
+
+.message__register {
+    color: green;
+}

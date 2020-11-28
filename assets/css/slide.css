@@ -1,0 +1,159 @@
+@import url('root.css');
+/* background image */
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide__background-img {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/slide/peliculas-bg01.jpg');
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slide__background-img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+/* container movie */
+
+.slide__movie-container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.slide__poster-movie {
+    width: 284px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.slide__info-movie {
+    margin-left: 30px;
+    height: 60%;
+}
+
+.slide__title-movie {
+    font-size: var(--font-size-big);
+    font-weight: bold;
+    color: var(--color-white-text);
+    margin-bottom: 15px;
+}
+
+.slide__anio-movie {
+    font-size: var(--font-size-big-25);
+    font-weight: bold;
+    color: var(--color-white-text);
+    margin-bottom: 15px;
+}
+
+.slide__gender-movie {
+    font-size: var(--font-size-big-20);
+    font-weight: bold;
+    color: var(--color-white-text);
+    margin-bottom: 15px;
+}
+
+.slide__description-movie {
+    font-size: var(--font-size-medium);
+    font-weight: lighter;
+    color: var(--color-white-text);
+    margin-bottom: 30px;
+}
+
+.slide__like-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.slide__heart {
+    width: 30px;
+    margin-right: .5em;
+}
+
+.slide__likes {
+    font-size: var(--font-size-big-30);
+    font-weight: bold;
+}
+
+.slide__buttons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide__btn {
+    padding: .5em 1em;
+    width: 150;
+    height: 45px;
+    margin-right: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--color-red-accent);
+    color: var(--color-white-text);
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.slide__btn--outline {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid var(--color-red-accent);
+    color: var(--color-red-accent);
+    transition: .3s;
+}
+
+.slide__btn:hover {
+    box-shadow: 1px 1px 15px var(--color-red-accent);
+}
+
+.slide__btn--outline:hover {
+    background-color: var(--color-red-accent);
+    color: var(--color-white-text);
+}
+
+.slide__btn-darlike{
+    padding: .4em;
+    margin: 0 .5em;
+    font-size: var(--font-size-small);
+    border: 1px solid var(--color-red-accent);
+    border-radius: 15px;
+}
+
+
+.transition{
+    background: linear-gradient( rgba(0, 0, 0, 0),var(--color-black-primary));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    z-index: 20;
+}
