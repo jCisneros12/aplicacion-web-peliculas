@@ -149,10 +149,10 @@ estrutura:
                     
 Controlador  | Funcion | Ejemplo
 ------------- | ------------- | -------------
-AppController  | index | <?=BASE_DIR?>App/index/ 
-AdminController  | dashboard | <?=BASE_DIR?>Admin/dashboard/ 
-PeliculasController  | getAllMovies | <?=BASE_DIR?>Peliculas/getAllMovies/ 
-UsuarioController  | iniciarSesion | <?=BASE_DIR?/Usuario/iniciarSesion/ 
+AppController  | index | <?=BASE_DIR?> App/index/ 
+AdminController  | dashboard | <?=BASE_DIR?> Admin/dashboard/ 
+PeliculasController  | getAllMovies | <?=BASE_DIR?> Peliculas/getAllMovies/ 
+UsuarioController  | iniciarSesion | <?=BASE_DIR?> /Usuario/iniciarSesion/ 
 
 
 Se puede mejorar mucho más :)
